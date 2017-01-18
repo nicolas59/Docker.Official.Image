@@ -15,6 +15,7 @@ services:
       - MAIL_URL=smtp://smtp.email
       - HTTP_PROXY=http://proxy.domain.com
       - HTTPS_PROXY=http://proxy.domain.com
+      - Accounts_AvatarStorePath=/app/uploads
     depends_on:
       - mongo
     ports:
