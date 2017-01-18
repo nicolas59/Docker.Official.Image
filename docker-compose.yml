@@ -2,7 +2,8 @@ version: '1'
 
 services:
   rocketchat:
-    image: rocketchat/rocket.chat:latest
+    #image: rocketchat/rocket.chat:latest
+    build: rocketchat
     restart: unless-stopped
     volumes:
       - ./uploads:/app/uploads
